@@ -1,0 +1,203 @@
+#1. Faça um programa em C que leia dois valores numéricos inteiros e efetue a adição, caso o resultado seja maior que 10, apresentá-lo.
+#num1 = int(input('Informe o primeiro número: '))
+#num2 = int(input('o segundo número: '))
+#num3 = num1 + num2
+#if num3 > 10:
+#    print(num3)
+#2. Faça umprograma em C que leia dois valores inteiros e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8, caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
+#num1 = int(input('Informe o primeiro número: '))
+#num2 = int(input('o segundo número: '))
+#num3 = num1 + num2
+#if num3 > 20:
+ #   print(num3+8)
+#elif num3 <= 20:
+#    print(num3-5)
+
+#3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
+#num1 = int(input('Insira um número: '))
+#verif = num1 % 3
+#if verif == 0:
+#    print('É múltiplo de 3!!')
+#else:
+ #   print('Não é múltiplo de 3')
+    
+#4. Faça um programa que leia umnúmero e informe se ele é ou não divisível por 5.
+#num1 = float(input('Insira um número: '))
+#verifica = num1 % 5
+#if verifica == 0:
+ #   print('É divisivel por 5')
+#else:
+#    print('Não é divisivel por 5')
+#5. Faça um programa em C que leia um número e informe se ele é divisível por 3 e por 7.
+#num1 = float(input('Insira um número: '))
+#verifica01 = num1 % 3 
+#verifica02 = num1 % 7
+#if (verifica01 == 0) and (verifica02 == 0):
+#    print('É divisivel por 3 e 7')
+#else:
+ #   print('Não É divisivel por 3 e 7')
+
+#6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+#salariobruto = float(input('informe seu salário bruto: '))
+#parcela = float(input('Informe o valor da parcela: '))
+#porcentagem = salariobruto * 0.3  
+#if porcentagem > parcela:
+#    print('O empréstimo foi concedido.')
+#else:
+#    print('O empréstimo não pode ser realizado.')
+
+#7. Faça umprograma em C que leia umnúmero e indique se o número está compreendido entre 20 e 50 ou não.
+#num1 = int(input('Insira um número qualquer: '))
+#if (num1 >= 20) and (num1 <= 50):
+#    print('O número está compreendido entre 20 e 50.')
+#else:
+#    print('O número não está compreendido entre os valores de 20 e 50')
+
+#8. Faça umprograma que leia um número e imprima uma das mensagens: "Maior do que 20", "Igual a 20"ou "Menor do que 20".
+#num1 = int(input('Insira um valor: '))
+#if num1 > 20:
+#    print('Maior que 20 !!!')
+#elif num1 == 20:
+#    print('Igual a 20 !!!')
+#else:
+#    print('Menor que 20!!!')
+    
+#9. Faça umprograma em C que permita entrar com o ano de nascimento da pessoa e como ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de verificar se o ano de nascimento informado é válido.
+#anoatual = 2022
+#nascimento = int(input('Informe o ano de seu nascimento: '))
+#if nascimento > anoatual:
+#    print('Data de nascimento inválida.')
+#elif nascimento == anoatual:
+ #   print('Se trata de uma recém-nascida.')
+#else:
+#    print(f'A pessoa tem: {anoatual-nascimento} anos.')
+
+#10. Faça um programa em C que leia três números inteiros e imprima os três em ordem crescente.
+#valor1 = int(input('valor1: '))
+#valor2 = int(input('valor2: '))
+#valor3 = int(input('valor3: '))
+#if (valor1 > valor2) and (valor2 > valor3):
+#    print(f'{valor1} {valor2} {valor3}')
+#if (valor1 < valor2) and (valor2 < valor3):
+#    print(f'{valor3} {valor2} {valor1}')
+#if (valor1 < valor2) and (valor2 > valor3):
+ #   if valor1 > valor3:
+ #       print(f'{valor2} {valor1} {valor3}')
+#if (valor1 > valor2) and (valor1 > valor3):
+ #   if valor3 > valor2:
+  #      print(f'{valor1} {valor3} {valor2}')
+#if (valor3 > valor1) and (valor3 > valor2):
+ #   if valor1 > valor2:
+  #      print(f'{valor3} {valor1} {valor2}')
+#if (valor2 > valor1) and (valor2 > valor3):
+ #   if valor3 > valor1:
+  #      print(f'{valor2} {valor3} {valor1}')
+
+#11. Faça umprograma que leia 3 números e imprima o maior deles.
+#valor1 = int(input('valor1: '))
+#valor2 = int(input('valor2: '))
+#valor3 = int(input('valor3: '))
+#if (valor1 > valor2) and (valor1 > valor3):
+#    print(valor1)
+#if (valor2 > valor1) and (valor2 > valor3):
+#    print(valor2)
+#if (valor3 > valor1) and (valor3 > valor2):
+ #   print(valor3)
+
+#12. Faça umprograma que leia a idade de uma pessoa e informe:
+#• Se é maior de idade
+#• Se é menor de idade
+#• Se é maior de 65 anos
+#idade = int(input('Informe sua idade: '))
+#if idade > 65:
+#    print('É maior de 65 anos.')
+#if (idade <= 65) and (idade >=18):
+#    print('É maior de idade.')
+#if idade < 18:
+#    print('É menor de idade.')
+
+#13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da prova 2 de umaluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
+#nome = input('Informe seu nome: ')
+#n1 = float(input('nota1: '))
+#n2 = float(input('nota2: '))
+#if (n1+n2)/2 >= 7:
+#    print(f'Aluno: {nome} está aprovado.\n Nota1:{n1}\n Nota2:{n2}\n Média:{(n1+n2)/2} ')
+#if ((n1+n2)/2 < 7) and ((n1+n2)/2 > 3):
+#    print(f'Aluno: {nome} foi para prova final.\n Nota1:{n1}\n Nota2:{n2}\n Média:{(n1+n2)/2} ')
+#if (n1+n2)/2 < 3:
+ #   print(f'Aluno: {nome} está reprovado.\n Nota1:{n1}\n Nota2:{n2}\n Média:{(n1+n2)/2} ')
+    
+#14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o desconto do INSS segundo a tabela seguir:
+#Salário Faixa de Desconto
+#Menor ou igual à R$600,00 Isento
+#Maior que R$600,00 e menor ou igual a R$1200,00 20%
+#Maior que R$1200,00 e menor ou igual a R$2000,00 25%
+#Maior que R$2000,00 30%
+#salario = float(input('Inforne seu sálario: '))
+#if salario <= 600:
+#    print('Você é isento(a).')
+#if (salario > 600) and (salario <= 1200):
+#    desconto = salario * 0.2 
+#    print(f'Foram descontados R$: {desconto} reais.')
+#if (salario > 1200) and (salario <= 2000):
+#    desconto = salario * 0.25 
+#    print(f'Foram descontados R$: {desconto} reais.')
+#if salario > 2000:
+#    desconto = salario * 0.3 
+#    print(f'Foram descontados R$: {desconto} reais.')
+
+
+
+#15. Umcomerciante comprou umproduto e quer vendê-lo com umlucro de 45% se o valor da compra for menor que R$20,00, caso contrário, o lucro será de 30%. Faça um programa em C que leia o valor do produto e imprima o valor da venda.
+#produto = float(input('Qual o valor do produto? \n'))
+#if produto < 20:
+#    lucro = produto * 0.45
+#    print(f'O comerciante irá vender a R$:{produto+lucro} reais.')
+#elif produto >= 20:
+#    lucro = produto * 0.3
+#    print(f'O comerciante irá vender a R$:{produto+lucro} reais.')
+
+
+#16. A confederação brasileira de natação irá promover eliminatórias para o próximo mundial. Faça um programa em C que receba a idade de um nadador e imprima a sua categoria segundo a tabela a seguir:
+#Categoria Idade
+#Infantil A 5 - 7 anos
+#Infantil B 8 - 10 anos
+#Juvenil A 11 - 13 anos
+#Juvenil B 14 - 17 anos
+#Sênior maiores de 18 anos
+#17. Depois da liberação do governo para as mensalidades dos planos de saúde, as pessoas começaram a fazer pesquisas para descobrir um bom plano, não muito caro. Umvendedor de um plano de saúde apresentou a tabela a seguir. Faça um programa que entre com o nome e a idade de uma pessoa e imprima o nome e o valor que ela deverá pagar.
+#Idade Valor
+#Até 10 anos R$30,00
+#Acima de 10 até 29 anos R$60,00
+#Acima de 29 até 45 anos R$120,00
+#Acima de 45 até 59 anos R$150,00
+#Acima de 59 até 65 anos R$250,00
+#Maior que 65 anos R$400,00
+#18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês correspondente. Caso o usuário digite umnúmero fora desse intervalo, deverá aparecer uma mensagem informando que não existe mês com este número. Utilize o switch para este problema.
+#19. Emumcampeonato nacional de arco-e-flecha, tem-se equipes de três jogadores para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o mesmo número de pontos, criar um programa em C que informe se uma equipe foi classificada, de acordo com a seguinte especificação:
+#• Ler os pontos obtidos por cada jogador da equipe;
+#• Mostrar esses valores em ordem decrescente;
+#• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles, caso contrário, imprimir a mensagem "Equipe desclassificada".
+#20. O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de acordo com o saldomédio no último ano. Faça um programa que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a tabela a seguir. O programa deve imprimir uma mensagem informando o saldo médio e o valor de crédito.
+#Saldo Médio Percentual
+#de 0 a 500 nenhum crédito
+#de 501 a 1000 30% do valor do saldo médio
+#de 1001 a 3000 40% do valor do saldo médio
+#acima de 3001 50% do valor do saldo médio
+#21. A biblioteca de uma Universidade deseja fazer um programa que leia o nome do livro que será emprestado, o tipo de usuário (professor ou aluno) e possa imprimir um recibo conforme mostrado a seguir. Considerar que o professor tem dez dias para devolver o livro e o aluno só três dias.
+#• Nome do livro:
+#• Tipo de usuário:
+#• Total de dias:
+#22. Construa um programa que leia o percurso em quilómetros, o tipo do carro e informe o consumo estimado de combustível, sabendo-se que umcarro tipo C faz 12 kmcom umlitro de gasolina, um tipo B faz 9 kme o tipo C, 8 kmpor litro.
+#23. Crie um programa que informe a quantidade total de calorias de uma refeição a partir da escolha do usuário que deverá informar o prato, a sobremesa, e bebida conforme a tabela a seguir.
+#Prato Sobremesa Bebida
+#Vegetariano 180cal Abacaxi 75cal Chá 20cal
+#Peixe 230cal Sorvete diet 110cal Suco de laranja 70cal
+#Frango 250cal Mousse diet 170cal Suco de melão 100cal
+#Carne 350cal Mousse chocolate 200cal Refrigerante diet 65cal
+#24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para cobrar dosmotoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, faça um programa que, a partir da leitura da placa do carro, informe omês em que o emplacamento deve ser renovado.
+#25. A prefeitura contratou uma firma especializada para manter os níveis de poluição considerados ideais para umpaís do 1º mundo. As indústrias, maiores responsáveis pela poluição, foram classificadas em três grupos. Sabendo-se que a escala utilizada varia de 0,05 e que o índice de poluição aceitável é até 0,25, fazer um programa que possa imprimir intimações de acordo com o índice e a tabela a seguir:
+#Índice Indústrias que receberão intimação
+#0,3 1º gurpo
+#0,4 1º e 2º grupos
+#0,5 1º, 2º e 3º grupos
